@@ -19,10 +19,6 @@ This capstone consists of the mobile and desktop versions with the following sec
 - CSS
 - JAVASCRIPT ES6
 - Webpack
-## Live Demo
-
-[Live Demo Link]()
-
 
 ## To get a local copy run the following steps:
 - Copy [this link](https://github.com/Whoistolu/To-Do-List)
