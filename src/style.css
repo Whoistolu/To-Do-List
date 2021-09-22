@@ -1,3 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: bisque;
+  background-color: gray;
+}
+
+.to-do {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  right: 40%;
+  box-shadow: 4px 6px gray;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: rgb(247, 240, 240);
+}
+
+.to-do .today {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: rgb(110, 106, 106);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px;
+  background-color: #fff;
+}
+
+.to-do .add-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #fff;
+}
+
+.to-do .add-text input {
+  font-style: italic;
+}
+
+.to-do .todos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.to-do .todo-item {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 15px 15px;
+  /* border-bottom: 2px solid gray; */
+  /* padding: 10px 0; */
+}
+
+.to-do input[type=text] {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.to-do .todo-item input[type=text] {
+  flex-grow: 1;
+}
+
+.to-do .button {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(199, 195, 195);
+  padding: 10px;
+}
+
+.to-do .button button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: rgb(121, 116, 116);
 }
