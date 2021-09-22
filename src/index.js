@@ -1,6 +1,7 @@
 import './style.css';
+import { saveLocalStorage, updateCompleted } from './active.js';
 
-const items = [
+let items = [
   {
     description: 'wash the dishes',
     completed: true,
@@ -13,6 +14,11 @@ const items = [
   },
 ];
 
+const storageData = JSON.parse(localStorage.getItem('toDoStorage'));
+if (storageData) {
+  items = storageData;
+}
+
 const todos = document.querySelector('.todos');
 items.forEach((item) => {
   const html = `<input type="checkbox">
@@ -24,6 +30,11 @@ items.forEach((item) => {
   input.checked = item.completed;
   div.classList.add('todo-item');
   div.id = item.index;
+
+  input.addEventListener('change', () => {
+    updateCompleted(item, input);
+    saveLocalStorage(items);
+  });
 
   todos.appendChild(div);
 });
