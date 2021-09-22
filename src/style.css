@@ -52,8 +52,6 @@ body {
   gap: 20px;
   background-color: #fff;
   padding: 15px 15px;
-  /* border-bottom: 2px solid gray; */
-  /* padding: 10px 0; */
 }
 
 .to-do input[type=text] {
