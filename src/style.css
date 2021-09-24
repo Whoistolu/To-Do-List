@@ -10,9 +10,9 @@ body {
 
 .to-do {
   position: absolute;
-  left: 40%;
-  top: 40%;
-  right: 40%;
+  left: 30%;
+  top: 30%;
+  right: 30%;
   box-shadow: 4px 6px gray;
   display: flex;
   flex-direction: column;
