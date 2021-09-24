@@ -5,7 +5,7 @@
 
 ![screenshot](img/todo3.png)
 
-![video](https://www.loom.com/share/fece5fec7b8941ea9646f13a8cd1b019)
+[video](https://www.loom.com/share/fece5fec7b8941ea9646f13a8cd1b019)
 
 This is my capstone project for the HTML/CSS module.
 An open source web development conference site.
