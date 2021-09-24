@@ -1,7 +1,6 @@
 export const saveLocalStorage = (data) => {
   const todoItems = document.querySelectorAll('.todo-item');
   todoItems.forEach((item, idx) => {
-    console.log(item)
     item.id = idx;
   });
   data.forEach((d, idx) => {

@@ -9,7 +9,6 @@ if (storageData) {
 }
 
 const todos = document.querySelector('.todos');
-console.log(itemsArray);
 itemsArray.forEach((item) => {
   const html = `<input type="checkbox">
   <input class="edit" value=${item.description} type="text"></input>
@@ -32,7 +31,6 @@ itemsArray.forEach((item) => {
   const trash = div.querySelector('.trash');
   const edit = div.querySelector('.edit');
   edit.addEventListener('change', () => {
-    console.log('new text: ', edit.value, ' my div.id', div.id);
     itemsArray.forEach((item) => {
       if (item.index.toString() === div.id) {
         item.description = edit.value;
