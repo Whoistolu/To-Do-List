@@ -5,3 +5,4 @@ export const saveLocalStorage = (data) => {
 export const updateCompleted = (item, input) => {
   item.completed = input.checked;
 };
+

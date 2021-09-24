@@ -1,18 +1,7 @@
 import './style.css';
 import { saveLocalStorage, updateCompleted } from './active.js';
 
-let items = [
-  {
-    description: 'wash the dishes',
-    completed: true,
-    index: 0,
-  },
-  {
-    description: 'complete To Do List project',
-    completed: false,
-    index: 1,
-  },
-];
+let items = [];
 
 const storageData = JSON.parse(localStorage.getItem('toDoStorage'));
 if (storageData) {
@@ -37,4 +26,17 @@ items.forEach((item) => {
   });
 
   todos.appendChild(div);
+});
+
+
+const form = document.getElementById('form-id');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const result = form.querySelector('input').value;
+  console.log('length: ', items.length);
+  items.push({completed: false, description: result, index: items.length});
+  console.log(items);
+  saveLocalStorage(items);
+  window.location.reload();
+
 });
