@@ -1,5 +1,8 @@
 import './style.css';
 import { saveLocalStorage, updateCompleted } from './active.js';
+import {
+  editTodo, removeTodos, addTodo, clearCompletedTodos,
+} from './add.js';
 
 let itemsArray = [];
 
@@ -31,11 +34,7 @@ itemsArray.forEach((item) => {
   const trash = div.querySelector('.trash');
   const edit = div.querySelector('.edit');
   edit.addEventListener('change', () => {
-    itemsArray.forEach((item) => {
-      if (item.index.toString() === div.id) {
-        item.description = edit.value;
-      }
-    });
+    editTodo(itemsArray, div.id, edit.value);
     saveLocalStorage(itemsArray);
   });
   vertical.addEventListener('click', () => {
@@ -44,12 +43,7 @@ itemsArray.forEach((item) => {
   });
   trash.addEventListener('click', () => {
     div.remove();
-    itemsArray = itemsArray.filter((something) => {
-      if (something.index.toString() === div.id) {
-        return false;
-      }
-      return true;
-    });
+    itemsArray = itemsArray.filter((i) => removeTodos(i, div.id));
     saveLocalStorage(itemsArray);
   });
 });
@@ -57,26 +51,14 @@ itemsArray.forEach((item) => {
 const form = document.getElementById('form-id');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const result = form.querySelector('input').value;
-  itemsArray.push({ completed: false, description: result, index: itemsArray.length });
+  const { value } = form.querySelector('input');
+  addTodo(itemsArray, value);
   saveLocalStorage(itemsArray);
   window.location.reload();
 });
 
 const clearButton = document.querySelector('#button');
 clearButton.addEventListener('click', () => {
-  const todoArray = document.querySelectorAll('.todo-item');
-  todoArray.forEach((div) => {
-    const input = div.querySelector('input');
-    if (input.checked) {
-      div.remove();
-      itemsArray = itemsArray.filter((something) => {
-        if (something.index.toString() === div.id) {
-          return false;
-        }
-        return true;
-      });
-      saveLocalStorage(itemsArray);
-    }
-  });
+  itemsArray = clearCompletedTodos(itemsArray);
+  saveLocalStorage(itemsArray);
 });
