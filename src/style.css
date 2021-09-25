@@ -10,9 +10,9 @@ body {
 
 .to-do {
   position: absolute;
-  left: 40%;
-  top: 40%;
-  right: 40%;
+  left: 30%;
+  top: 30%;
+  right: 30%;
   box-shadow: 4px 6px gray;
   display: flex;
   flex-direction: column;
@@ -39,6 +39,7 @@ body {
 
 .to-do .add-text input {
   font-style: italic;
+  width: 90%;
 }
 
 .to-do .todos {
@@ -76,4 +77,8 @@ body {
   background-color: transparent;
   font-size: 1.2rem;
   color: rgb(121, 116, 116);
+}
+
+.trash {
+  display: none;
 }

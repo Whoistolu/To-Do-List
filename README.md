@@ -3,7 +3,7 @@
 
 # To Doo List
 
-![screenshot](img/todo2.png)
+![screenshot](img/todo3.png)
 
 This is my capstone project for the HTML/CSS module.
 An open source web development conference site.
