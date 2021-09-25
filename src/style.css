@@ -39,6 +39,7 @@ body {
 
 .to-do .add-text input {
   font-style: italic;
+  width: 90%;
 }
 
 .to-do .todos {
