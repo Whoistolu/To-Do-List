@@ -5,6 +5,8 @@
 
 ![screenshot](img/todo3.png)
 
+[Live Demo](https://whoistolu.github.io/To-Do-List/dist/)
+
 This is my capstone project for the HTML/CSS module.
 An open source web development conference site.
 
