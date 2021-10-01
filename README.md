@@ -3,9 +3,7 @@
 
 # To Doo List
 
-![screenshot](img/todo3.png)
-
-[Live Demo](https://whoistolu.github.io/To-Do-List/dist/)
+![screenshot](img/coverage1.png)
 
 ## Built With
 
@@ -13,6 +11,9 @@
 - CSS
 - JAVASCRIPT ES6
 - Webpack
+- Jest
+- Babel
+- Coverage
 
 ## To get a local copy run the following steps:
 - Copy [this link](https://github.com/Whoistolu/To-Do-List)
