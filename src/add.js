@@ -20,6 +20,7 @@ export const addTodo = (itemsArray, value) => {
 export const clearCompletedTodos = (array) => {
   let resultArray = array;
   const todoArray = document.querySelectorAll('.todo-item');
+  // console.log(todoArray.length);
   todoArray.forEach((div) => {
     const input = div.querySelector('input');
     if (input.checked) {

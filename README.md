@@ -3,7 +3,7 @@
 
 # To Doo List
 
-![screenshot](img/coverage1.png)
+![screenshot](img/coverage2.png)
 
 ## Built With
 
