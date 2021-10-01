@@ -16,3 +16,15 @@ describe('A test to add items to To-Do-List', () => {
     expect(firstElement.index).toBe(2);
   });
 });
+
+describe('A test to remove items from the To-Do-List', () => {
+  test('Test removeTodos function', () => {
+    // Arrange
+    const tolu = { index: 3 };
+    const id = '3';
+    // Act
+    const result = removeTodos(tolu, id);
+    // Assert
+    expect(result).toBe(false);
+  });
+});
