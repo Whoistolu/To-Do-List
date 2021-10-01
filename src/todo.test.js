@@ -1,4 +1,4 @@
-import { addTodo } from './add.js';
+import { addTodo, removeTodos } from './add.js';
 
 describe('A test to add items to To-Do-List', () => {
   test('Test addToDo function', () => {
