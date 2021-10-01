@@ -7,7 +7,8 @@
     "start": "webpack serve --open",
     "build": "webpack",
     "lint": "npx eslint . && npx stylelint **/*.{css,scss} && npx hint .",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"    
   },
   "keywords": [],
   "author": "",
