@@ -1,5 +1,5 @@
 import { addTodo, removeTodos, editTodo } from './add.js';
-// import { updateCompleted } from './active.js';
+import { updateCompleted } from './active.js';
 
 describe('A test to add items to To-Do-List', () => {
   test('Test addToDo function', () => {
@@ -39,5 +39,16 @@ describe('A test to edit items in the To-Do-List', () => {
     editTodo(takenArr, id2, newestItem);
 
     expect(takenArr[0].description).toBe('push this in');
+  });
+});
+
+describe('A test to update items that are completed', () => {
+  test('Test updateCompleted( function', () => {
+    const newItem = { completed: true };
+    const newInput = { checked: true };
+
+    updateCompleted(newItem, newInput);
+
+    expect(newItem.completed).toBe(newInput.checked);
   });
 });
