@@ -3,24 +3,17 @@
 
 # To Doo List
 
-![screenshot](img/todo3.png)
+![screenshot](img/coverage1.png)
 
-[Live Demo](https://whoistolu.github.io/To-Do-List/dist/)
-
-This is my capstone project for the HTML/CSS module.
-An open source web development conference site.
-
-This capstone consists of the mobile and desktop versions with the following sectins:
-1. The navbar.
-2. The homepage.
-3. The featured speakers section.
-4. User interactions: link, mobile menu.
 ## Built With
 
 - HTML
 - CSS
 - JAVASCRIPT ES6
 - Webpack
+- Jest
+- Babel
+- Coverage
 
 ## To get a local copy run the following steps:
 - Copy [this link](https://github.com/Whoistolu/To-Do-List)
