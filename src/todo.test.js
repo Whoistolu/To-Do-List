@@ -76,6 +76,6 @@ describe('A test for the clear completed to-do function', () => {
     `;
     clearCompletedTodos([]);
     const remainingItems = document.querySelectorAll('.todo-item');
-    expect(remainingItems).toHaveLength(2);
+    expect(remainingItems).toHaveLength(1);
   });
 });
