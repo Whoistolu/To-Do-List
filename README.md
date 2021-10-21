@@ -1,4 +1,3 @@
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # To Doo List
@@ -16,6 +15,7 @@
 - Coverage
 
 ## To get a local copy run the following steps:
+
 - Copy [this link](https://github.com/Whoistolu/To-Do-List)
 - Open your terminal or command line
 - Run "git clone Paste [this link](https://github.com/Whoistolu/To-Do-List)"
@@ -31,6 +31,13 @@
 - GitHub: [@githubhandle](https://github.com/Whoistolu)
 - Twitter: [@twitterhandle](https://twitter.com/Littletolu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/toluwase-ajise-9b40411b2/)
+
+👤 **Author1**
+
+- Name: Unclebigbay
+- GitHub: [@unclabay143](https://github.com/unclebay143)
+- Twitter: [@twitterhandle](https://twitter.com/unclebigbay143)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/unclebigbay/)
 
 ## 🤝 Contributing
 
