@@ -6,13 +6,18 @@
 
 body {
   background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .to-do {
-  position: absolute;
+  width: 500px;
+  /* position: absolute;
   left: 30%;
   top: 30%;
-  right: 30%;
+  right: 30%; */
   box-shadow: 4px 6px gray;
   display: flex;
   flex-direction: column;
