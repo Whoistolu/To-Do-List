@@ -32,7 +32,7 @@
 - Twitter: [@twitterhandle](https://twitter.com/Littletolu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/toluwase-ajise-9b40411b2/)
 
-👤 **Author1**
+👤 **Author2**
 
 - Name: Unclebigbay
 - GitHub: [@unclabay143](https://github.com/unclebay143)
