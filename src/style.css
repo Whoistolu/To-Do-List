@@ -6,13 +6,14 @@
 
 body {
   background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .to-do {
-  position: absolute;
-  left: 30%;
-  top: 30%;
-  right: 30%;
+  width: 500px;
   box-shadow: 4px 6px gray;
   display: flex;
   flex-direction: column;
@@ -55,13 +56,13 @@ body {
   padding: 15px 15px;
 }
 
-.to-do input[type=text] {
+.to-do input[type='text'] {
   border: none;
   background-color: transparent;
   font-size: 1rem;
 }
 
-.to-do .todo-item input[type=text] {
+.to-do .todo-item input[type='text'] {
   flex-grow: 1;
 }
 
@@ -77,8 +78,14 @@ body {
   background-color: transparent;
   font-size: 1.2rem;
   color: rgb(121, 116, 116);
+  cursor: pointer;
+  text-transform: capitalize;
 }
 
 .trash {
   display: none;
+}
+
+.fas {
+  cursor: pointer;
 }

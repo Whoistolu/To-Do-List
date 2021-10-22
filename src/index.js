@@ -1,20 +1,24 @@
 import './style.css';
 import { saveLocalStorage, updateCompleted } from './active.js';
-import {
+import
+{
   editTodo, removeTodos, addTodo, clearCompletedTodos,
 } from './add.js';
 
-let itemsArray = [];
+// let itemsArray = [];
 
-const storageData = JSON.parse(localStorage.getItem('toDoStorage'));
-if (storageData) {
-  itemsArray = storageData;
-}
+// const storageData = JSON.parse(localStorage.getItem("toDoStorage"));
+// if (storageData) {
+//   itemsArray = storageData;
+// }
+
+let itemsArray = JSON.parse(localStorage.getItem('toDoStorage')) || [];
 
 const todos = document.querySelector('.todos');
-itemsArray.forEach((item) => {
+
+itemsArray.reverse().forEach((item) => {
   const html = `<input type="checkbox">
-  <input class="edit" value=${item.description} type="text"></input>
+  <input class="edit" value="${item.description}" type="text"></input>
   <i class="fas fa-ellipsis-v vertical"></i>
   <i class="fas fa-trash-alt trash"></i>`;
   const div = document.createElement('div');
