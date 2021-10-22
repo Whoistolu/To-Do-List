@@ -1,11 +1,10 @@
 /**
  * @jest-environment jsdom
  */
-import {
-  addTodo,
-  removeTodos,
-  editTodo,
-  clearCompletedTodos,
+
+import
+{
+  addTodo, removeTodos, editTodo, clearCompletedTodos,
 } from './add.js';
 import { updateCompleted } from './active.js';
 
