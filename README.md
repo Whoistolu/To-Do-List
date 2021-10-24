@@ -31,14 +31,6 @@
 - GitHub: [@githubhandle](https://github.com/Whoistolu)
 - Twitter: [@twitterhandle](https://twitter.com/Littletolu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/toluwase-ajise-9b40411b2/)
-
-👤 **Author2**
-
-- Name: Kasongo Mukebo Ben
-- GitHub: [@githubhandle](https://github.com/BenMukebo)
-- Twitter: [@twitterhandle](https://twitter.com/BenMukebo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kasongo-mukebo-ben-591720205/)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
